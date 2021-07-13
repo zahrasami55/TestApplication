@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz App </title>
+    
+    <!-- FontAweome CDN Link for Icons -->
+    
+</head>
+<body>
+<div >
+    <div class = "row">
+        <div class ="card" >
+            <div  *ngIf = "i <10">
+            <p class = "text-center"><b> {{i+1}} of {{quizzes.length}}</b></p>
+            <h2>{{ quizzes[i].question}}</h2>
+            
+                
+                
+                    <textarea rows="3" cols="80" id="ans" type="Text"[(ngModel)]="filterName" name="filterName"></textarea>
+                
+             
+                
+                
+            
+            <button class = "btn-large btn-submit" (click) = "next()">Next</button>
+            </div>
+            <div  *ngIf = "i >9">
+            <p class="done">You are Done</p>
+            <div class = "text-center" *ngIf = "result">
+            Correct Answer: {{correctAns}} | Incorrect Answer: {{incorrectAns}}
+            
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    
+</div>
+</body>

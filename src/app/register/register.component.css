@@ -1,0 +1,25 @@
+button{
+    width:780px;
+    align-content: center;
+}
+    
+h4{
+    text-align: right;
+    width: 530px;
+    
+    
+}
+body{
+    background-color: rgb(165, 224, 217);
+    height: 1000px;
+}
+.card{
+    border-color: rgb(6, 69, 88);
+    border-radius: 10px;
+   border-style:double;
+}
+ input.ng-invalid.ng-dirty{
+     border-bottom-color: red !important ;
+     box-shadow:0 1px 0 0  !important;
+ }
+
